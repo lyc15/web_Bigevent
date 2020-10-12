@@ -32,7 +32,7 @@ $(function () {
         e.preventDefault()
         //发起Ajax的POST请求
         $.ajax({
-            url: 'http://ajax.frontend.itheima.net/api/reguser',
+            url: '/api/reguser',
             method: 'POST',
             data: {
                 username: $('#form_reg [name = username]').val(),
@@ -54,7 +54,7 @@ $(function () {
     $('#form_login').submit(function (e) {
         e.preventDefault()
         $.ajax({
-            url: 'http://ajax.frontend.itheima.net/api/login',
+            url: '/api/login',
             method: 'POST',
             //快速获取表单中的内容
             data: $(this).serialize(),
